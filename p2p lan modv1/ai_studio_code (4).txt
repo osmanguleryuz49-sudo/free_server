@@ -1,0 +1,37 @@
+{
+	"schemaVersion": 1,
+	"id": "free_server",
+	"version": "${version}",
+	"name": "Free Server",
+	"description": "Port yönlendirmesi veya VPN olmadan LAN dünyalarını internete açın!",
+	"authors": [
+		"alipro49"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/free_server/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"com.alipro49.free_server.Free_server"
+		],
+		"client": [
+			"com.alipro49.free_server.client.Free_serverClient"
+		]
+	},
+	"mixins": [
+		"free_server.mixins.json",
+		{
+			"config": "free_server.client.mixins.json",
+			"environment": "client"
+		}
+	],
+	"depends": {
+		"fabricloader": ">=0.16.0",
+		"minecraft": "~1.21.1",
+		"java": ">=21",
+		"fabric-api": "*"
+	}
+}

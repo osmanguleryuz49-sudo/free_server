@@ -1,0 +1,13 @@
+{
+	"required": true,
+	"package": "com.alipro49.free_server.client.mixin",
+	"compatibilityLevel": "JAVA_21",
+	"client": [
+		"JoinMultiplayerScreenMixin",
+		"PauseScreenMixin",
+		"ShareToLanScreenMixin"
+	],
+	"injectors": {
+		"defaultRequire": 1
+	}
+}
